@@ -7,6 +7,48 @@
     content: counter(serial-number);  /* Display the counter */
   }
 
-  #serialno{
-    display: none;
+
+  .container{
+    text-align: center;
   }
+  table{
+    margin: 100px auto 50px;
+    border-color: aqua;
+  }
+  .inp{
+    margin:auto;
+  }
+
+  input{
+    height: 25px;
+    padding: 8px 15px;
+    width:180px;
+    margin:auto 12px;
+    border:1px solid aqua;
+    border-radius: 8px;
+    font-size: 15px;
+
+  }
+
+  button{
+    height:40px;
+    padding:8px 15px;
+    width:210px;
+    margin:20px 12px;
+    background-color: #61C0BF;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 20px;
+    outline: none;
+  }
+
+button:hover,
+button:focus {
+  background-color: #F38BA0;
+}
+
+
+
+  

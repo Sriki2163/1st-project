@@ -4,43 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1st Table Project</title>
+    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script>
         function addRow()
         {
-            var serialno=document.getElementById('serialno').value;
+            // var serialno=document.getElementById('serialno').value;
+            var first=document.getElementById('first').value;
+            var last=document.getElementById('last').value;
+            var country=document.getElementById('country').value;
+            var city=document.getElementById('city').value;
+
             var table=document.getElementsByTagName('table')[0];
             var newRow=table.insertRow(1);
 
             var cel1=newRow.insertCell(0);
-            newRow.insertCell(1);
-            newRow.insertCell(2);
-            newRow.insertCell(3);
-            newRow.insertCell(4);
+            var cel2=newRow.insertCell(1);
+            var cel3=newRow.insertCell(2);
+            var cel4=newRow.insertCell(3);
+            var cel5=newRow.insertCell(4);
 
-            cel1.innerHTML=serialno;
+            // cel1.innerHTML=serialno;
+            cel2.innerHTML=first;
+            cel3.innerHTML=last;
+            cel4.innerHTML=country;
+            cel5.innerHTML=city;
 
         }
         function addBot()
         {
-            var serialno=document.getElementById('serialno').value;
+            // var serialno=document.getElementById('serialno').value;
+            var first=document.getElementById('first').value;
+            var last=document.getElementById('last').value;
+            var country=document.getElementById('country').value;
+            var city=document.getElementById('city').value;
+
             var table=document.getElementsByTagName('table')[0];
             var rowcount=table.rows.length;
             var newRow=table.insertRow(rowcount);
 
             cel1=newRow.insertCell(0);
-            newRow.insertCell(1);
-            newRow.insertCell(2);
-            newRow.insertCell(3);
-            newRow.insertCell(4);
+            cel2=newRow.insertCell(1);
+            cel3=newRow.insertCell(2);
+            cel4=newRow.insertCell(3);
+            cel5=newRow.insertCell(4);
              
-            cel1.innerHTML=serialno;
+            // cel1.innerHTML=serialno;
+            cel2.innerHTML=first;
+            cel3.innerHTML=last;
+            cel4.innerHTML=country;
+            cel5.innerHTML=city;
         }
     </script>
 </head>
 <body>
-    <table border="1" class="css-serial">
+    <div class="container">
+    <table  class="css-serial" cellspacing="2" cellpadding="10" border="1">
         <tr>
             <th>Serial No</th>
             <th>First Name</th>
@@ -58,35 +78,42 @@
         </tr>
         <tr>
             <td></td>
-            <td>Srikanth</td>
+            <td>Vishal</td>
+            <td>sarnobat </td>
+            <td>Dubai</td>
+            <td>abu-dabi</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Chaitra</td>
             <td>Gowda </td>
+            <td>Germany</td>
+            <td>berlin</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Guru</td>
+            <td>Raj</td>
             <td>India</td>
             <td>Bangalore</td>
         </tr>
         <tr>
             <td></td>
-            <td>Srikanth</td>
+            <td>Naveen</td>
             <td>Gowda </td>
-            <td>India</td>
-            <td>Bangalore</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Srikanth</td>
-            <td>Gowda </td>
-            <td>India</td>
-            <td>Bangalore</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Srikanth</td>
-            <td>Gowda </td>
-            <td>India</td>
-            <td>Bangalore</td>
+            <td>australia</td>
+            <td>sydney</td>
         </tr></tbody>
-    </table></br>
-    <input type="text" name="" id="serialno">
-    <button type="submit" onclick="addRow();" >Add row to top</button><br/></br>
+    </table>
+    <div class="inp">
+    <input type="text" id="first" placeholder="Enter the first name">
+    <input type="text"  id="last" placeholder="Enter the last name">
+    <input type="text"  id="country" placeholder="Enter the country name">
+    <input type="text"  id="city" placeholder="Enter the city name"><br><br>
+    </div>
+    <div class="btn">
+    <button type="submit" onclick="addRow();" >Add row to top</button>
     <button type="submit" onclick="addBot();" >Add row to bottom</button><br/></br>
+    </div>
 </body>
 </html>
