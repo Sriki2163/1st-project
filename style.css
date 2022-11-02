@@ -1,10 +1,10 @@
 .css-serial {
-    counter-reset: serial-number;  /* Set the serial number counter to 0 */
+    counter-reset: serial-number; 
   }
   
   .css-serial td:first-child:before {
-    counter-increment: serial-number;  /* Increment the serial number counter */
-    content: counter(serial-number);  /* Display the counter */
+    counter-increment: serial-number; 
+    content: counter(serial-number);  
   }
 
 
