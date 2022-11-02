@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function addRow()
+        {
+            var serialno=document.getElementById('serialno').value;
+            var table=document.getElementsByTagName('table')[0];
+            var newRow=table.insertRow(1);
+
+            var cel1=newRow.insertCell(0);
+            newRow.insertCell(1);
+            newRow.insertCell(2);
+            newRow.insertCell(3);
+            newRow.insertCell(4);
+
+            cel1.innerHTML=serialno;
+
+        }
+        function addBot()
+        {
+            var serialno=document.getElementById('serialno').value;
+            var table=document.getElementsByTagName('table')[0];
+            var rowcount=table.rows.length;
+            var newRow=table.insertRow(rowcount);
+
+            cel1=newRow.insertCell(0);
+            newRow.insertCell(1);
+            newRow.insertCell(2);
+            newRow.insertCell(3);
+            newRow.insertCell(4);
+             
+            cel1.innerHTML=serialno;
+        }
+    </script>
+</head>
+<body>
+    <table border="1" class="css-serial">
+        <tr>
+            <th>Serial No</th>
+            <th>First Name</th>
+            <th> Last Name</th>
+            <th> Country</th>
+            <th> City</th>
+        </tr>
+        <tbody>
+        <tr>
+            <td></td>
+            <td>Srikanth</td>
+            <td>Gowda </td>
+            <td>India</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Srikanth</td>
+            <td>Gowda </td>
+            <td>India</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Srikanth</td>
+            <td>Gowda </td>
+            <td>India</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Srikanth</td>
+            <td>Gowda </td>
+            <td>India</td>
+            <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Srikanth</td>
+            <td>Gowda </td>
+            <td>India</td>
+            <td>Bangalore</td>
+        </tr></tbody>
+    </table></br>
+    <input type="text" name="" id="serialno">
+    <button type="submit" onclick="addRow();" >Add row to top</button><br/></br>
+    <button type="submit" onclick="addBot();" >Add row to bottom</button><br/></br>
+</body>
+</html>
